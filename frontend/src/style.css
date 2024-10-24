@@ -3,15 +3,76 @@
 *{
   margin: 0;
   padding: 0;
-  background-color: #121111;
+  padding-top: 10px
+
 }
 
 body{
-  height: 100vh;
+  height: 50vh;
   box-sizing: border-box;
-  background-color: #121111;
-  color: #a87373;
+  background-color: #000000;
+  color: #f1e2e2;
+  
 }
+.imagem {
+
+  width: 100%;       /* Ajusta a largura da imagem para 100% da tela */
+  height: auto;      /* Mantém a proporção da imagem */
+  display: block;    /* Remove o espaço embaixo da imagem */
+
+
+ }
+
+.menu-horizontal {
+  display: flex;
+  list-style: none;
+  padding: 50px;
+  margin: 0px;
+  justify-content: flex-start;
+}
+
+.menu-horizontal li {
+  margin-right: 20px; /* Espaçamento entre os iten*/
+  text-decoration: none;
+}
+
+.menu-horizontal a {
+  text-decoration: none;
+  margin-right: 20px;
+  color: #00ffff; /* Ajuste a cor conforme necessário */
+
+}
+
+header{
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(50, 46, 46, 0.92);
+  align-items: center;
+  position: absolute; /* Sobrepõe o cabeçalho na imagem */
+  top: 10px; /* Define a distância do topo */
+  left: 10px; /* Define a distância da esquerda */
+  color: white; /* Cor do texto */
+  font-size: 25px; /* Tamanho da fonte */
+  font-weight: bold; /* Deixa o texto em negrito */
+  text-shadow: 2px 2px 5px #332f2f; /* Adiciona sombra no texto para destaque*/
+  padding-left: 10px;
+  padding-right: 1850px;
+  /* padding-top: 24px; */
+  /* padding-bottom: 24px; */
+  border-style: solid;
+  border-color: #00ffff;
+}
+
+nav{
+  width: 90%;
+  position: absolute; /* Permite sobrepor a imagem */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
 
 .titulo-destaque{
   color: #22D4FD;
@@ -20,6 +81,7 @@ body{
 .apresentacao{
   margin: 10%;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
@@ -35,4 +97,41 @@ body{
 .apresentacao__conteudo__texto{
   font-size: 24px;
   font-family: 'Montserrat', sans-serif;
+}
+.login-container {
+  display: flex;
+  align-items: center;
+}
+
+.login-container form {
+  display: flex;
+  /* flex-direction: column; colocar o esqueci a senha abaixo do loguin */
+  gap: 10px;
+}
+
+.login-container input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-container button {
+  padding: 5px 10px;
+  background-color: #9c1628;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background-color: #45a049;
+}
+.forgot-password {
+  margin-top: 10px;
+}
+
+.forgot-password a {
+  color: #007BFF;
+  text-decoration: none;
 }
